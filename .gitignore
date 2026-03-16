@@ -1,30 +1,90 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# ===============================
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# GLOBAL
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# ===============================
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# Logs
 
-storage/*.key
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# IDE
+
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+
+# ENV FILES
+
+# ===============================
+
 .env
-Homestead.yaml
-Homestead.json
-/.vagrant
+.env.*
+!.env.example
+
+# ===============================
+
+# NODE / REACT (frontend)
+
+# ===============================
+
+frontend/react-project/node_modules/
+frontend/react-project/build/
+frontend/react-project/dist/
+frontend/react-project/.next/
+frontend/react-project/.cache/
+
+# ===============================
+
+# LARAVEL (backend)
+
+# ===============================
+
+backend/laravel-project/vendor/
+backend/laravel-project/node_modules/
+backend/laravel-project/storage/*.key
+backend/laravel-project/storage/logs/*
+backend/laravel-project/storage/framework/cache/*
+backend/laravel-project/storage/framework/sessions/*
+backend/laravel-project/storage/framework/views/*
+backend/laravel-project/bootstrap/cache/*
+
+# ===============================
+
+# TESTS / COVERAGE
+
+# ===============================
+
+coverage/
 .phpunit.result.cache
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# ===============================
+
+# DOCKER
+
+# ===============================
+
+docker-data/
+*.pid
+
+# ===============================
+
+# BUILD FILES
+
+# ===============================
+
+dist/
+build/
+tmp/
+temp/
