@@ -1,90 +1,93 @@
-# ===============================
+# ============================================================
+# BACKEND — Laravel
+# ============================================================
+backend/vendor/
+backend/.env
+backend/.env.backup
+backend/storage/app/private/*
+backend/storage/app/public/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/bootstrap/cache/*
+!backend/storage/app/private/.gitkeep
+!backend/storage/app/public/.gitkeep
+!backend/storage/framework/cache/.gitkeep
+!backend/storage/framework/sessions/.gitkeep
+!backend/storage/framework/views/.gitkeep
+!backend/storage/logs/.gitkeep
+!backend/bootstrap/cache/.gitkeep
+backend/database/database.sqlite
+backend/public/storage
+backend/public/hot
+backend/_ide_helper.php
+backend/_ide_helper_models.php
+backend/.phpstorm.meta.php
 
-# GLOBAL
+# ============================================================
+# FRONTEND — React / Node
+# ============================================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
 
-# ===============================
-
-# Logs
-
-*.log
-logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS
-
-.DS_Store
-Thumbs.db
-
-# IDE
-
-.vscode/
-.idea/
-*.swp
-
-# ===============================
-
-# ENV FILES
-
-# ===============================
-
-.env
-.env.*
-!.env.example
-
-# ===============================
-
-# NODE / REACT (frontend)
-
-# ===============================
-
-frontend/react-project/node_modules/
-frontend/react-project/build/
-frontend/react-project/dist/
-frontend/react-project/.next/
-frontend/react-project/.cache/
-
-# ===============================
-
-# LARAVEL (backend)
-
-# ===============================
-
-backend/laravel-project/vendor/
-backend/laravel-project/node_modules/
-backend/laravel-project/storage/*.key
-backend/laravel-project/storage/logs/*
-backend/laravel-project/storage/framework/cache/*
-backend/laravel-project/storage/framework/sessions/*
-backend/laravel-project/storage/framework/views/*
-backend/laravel-project/bootstrap/cache/*
-
-# ===============================
-
-# TESTS / COVERAGE
-
-# ===============================
-
-coverage/
-.phpunit.result.cache
-
-# ===============================
-
+# ============================================================
 # DOCKER
+# ============================================================
+docker/entrypoint.sh.bak
+nginx/logs/
 
-# ===============================
+# ============================================================
+# SISTEMA OPERACIONAL
+# ============================================================
 
-docker-data/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.fuse_hidden*
+.nfs*
+
+# ============================================================
+# EDITORES / IDEs
+# ============================================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# PhpStorm / IntelliJ
+.idea/
+*.iml
+
+# Vim / Emacs
+*.swp
+*.swo
+*.tmp
+
+# ============================================================
+# LOGS E TEMPORÁRIOS
+# ============================================================
+*.log
+*.cache
 *.pid
-
-# ===============================
-
-# BUILD FILES
-
-# ===============================
-
-dist/
-build/
 tmp/
 temp/
